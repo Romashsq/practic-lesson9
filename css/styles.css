@@ -168,7 +168,8 @@ a {
   --bc-color: #eeeff1;
   --metallic-blue: #34547a;
   --padding: 50px 0 50px;
-  --nickel: #727272;
+  --grey: #727272;
+  --dark-metallic-blue: #183961;
 }
 
 .metalick-blue {
@@ -228,12 +229,12 @@ p {
   font-weight: 400;
   line-height: 26.25px;
   font-size: var(--font-size);
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .section1 button:hover {
-  background-color: var(--black-color);
-  color: var(--metallic-blue);
+  background-color: var(--dark-metallic-blue);
+  color: var(--grey);
 }
 
 .section2 {
