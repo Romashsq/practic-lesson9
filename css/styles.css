@@ -216,7 +216,7 @@ p {
   opacity: 0.7;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
   .container {
     max-width: 768px;
     width: 100%;
@@ -422,9 +422,14 @@ p {
   display: none;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 600px) {
+  .checkbtn svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .container {
-    max-width: 375px;
+    max-width: 600px;
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
@@ -450,7 +455,6 @@ p {
 
   #check:checked ~ .nav-mobile {
     display: block;
-
     position: relative;
     left: 30px;
     background: grey;
