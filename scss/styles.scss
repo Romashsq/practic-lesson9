@@ -1,0 +1,264 @@
+$font-size: 16px;
+$font: Roboto, Roboto sans-serif;
+$black-color: #000000;
+$white-color: #ffffff;
+$bc-color: #eeeff1;
+$metallic-blue: #34547a;
+$padding1: 80px 0 80px;
+$grey: #727272;
+$dark-metallic-blue: #183961;
+$font-weight1: 400;
+$font-weight2: 500;
+$bold: bold;
+
+$max-width: 1200px;
+$width: 100%;
+$margin: 0 auto;
+$padding2: 0 20px;
+$flex: flex;
+
+$display: flex;
+$justify-content: flex-start;
+$flex-wrap: nowrap;
+$flex-direction: row;
+$gap: 50px;
+
+@mixin color {
+  color: white;
+}
+
+header {
+  background-color: $bc-color;
+
+  .header-nav {
+    max-width: $max-width;
+    width: $width;
+    margin: $margin;
+    padding: $padding2;
+  }
+}
+
+.nav {
+  .header-nav-description {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 50px;
+    font: $font;
+    padding: $padding1;
+    background-color: $bc-color;
+  }
+}
+
+a {
+  color: $metallic-blue;
+  text-decoration: none;
+}
+
+.bc-gray {
+  background-color: $bc-color;
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: $padding2;
+
+    .section1 {
+      padding: 60px 0 150px;
+    }
+  }
+}
+
+.section1 :first-child {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 78.75px;
+  width: 541px;
+  color: $black-color;
+}
+
+.section1 :nth-child(2) {
+  width: 540px;
+  margin-top: 20px;
+  color: $grey;
+  font-family: $font;
+  font-weight: $font-weight1;
+  font-size: $font-size;
+  line-height: 164%;
+  color: #727272;
+}
+
+.section1 button {
+  cursor: pointer;
+  background: $metallic-blue;
+  height: 65px;
+  width: 225px;
+  @include color;
+  font-weight: $font-weight1;
+  line-height: 26.25px;
+  font-size: 20px;
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.section1 button:hover {
+  background-color: $dark-metallic-blue;
+  color: $grey;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-top: 100px;
+}
+
+.section2 p {
+  text-align: center;
+  width: 540px;
+  height: 147px;
+  color: #727272;
+}
+
+.section2 h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 37.5px;
+  text-align: center;
+  width: 540px;
+  margin-bottom: 20px;
+}
+
+.metalick-blue {
+  background: $metallic-blue;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.section3-description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  justify-content: space-around;
+}
+
+.section3 {
+  padding: $padding1;
+
+  .section3-descriptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include color;
+  }
+
+  .section3-descriptions-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .section3-descriptions-text :first-child {
+    font-size: 21px;
+    line-height: 24.61px;
+  }
+
+  .section3-descriptions-text :last-child {
+    font-size: 16px;
+    line-height: 26.25px;
+  }
+}
+
+.bc-gray {
+  background: $bc-color;
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+}
+
+.section4 {
+  padding: $padding2;
+}
+
+.section4-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 0 0;
+}
+
+.section4-description h2 {
+  font-size: 32px;
+  color: $black-color;
+  line-height: 37.5px;
+  font-weight: $bold;
+}
+
+.section4-description p {
+  text-align: center;
+  width: 540px;
+  margin-top: 20px;
+  color: #727272;
+}
+
+.images {
+  position: relative;
+}
+
+.images img {
+  width: 1070px;
+  height: 600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.images::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  background: url("../images/play-button.png") no-repeat center center;
+  background-size: contain;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.footer :first-child {
+  font-size: 13px;
+  font-weight: 21.33px;
+  padding-top: 30px;
+  line-height: 24.61px;
+}
+
+.footer :last-child {
+  font-size: 13px;
+  font-weight: $font-weight2;
+  line-height: 21.33px;
+  padding: 1% 0 1%;
+  opacity: 0.7;
+}
+
+.footer span {
+  color: $white-color;
+}
